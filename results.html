@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results | Ai Architechs — Human-First AI Adoption</title>
+  <meta name="description" content="Proof over promises. See real metrics and anonymized case studies from organizations that transformed their AI adoption with Ai Architechs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Transformation Grid */
+    .transformation-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-2xl);
+    }
+
+    .transformation-pair {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-lg);
+      padding: var(--space-xl);
+      background: hsl(var(--card));
+      border: 1px solid hsl(var(--border));
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .transformation-pair .from {
+      color: hsl(var(--muted-text));
+      font-size: 0.9375rem;
+      font-weight: 500;
+    }
+
+    .transformation-pair .arrow {
+      color: hsl(var(--primary));
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .transformation-pair .to {
+      color: hsl(var(--primary));
+      font-size: 1.0625rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .transformation-pair {
+        flex-direction: column;
+        gap: var(--space-md);
+      }
+
+      .transformation-pair .arrow {
+        transform: rotate(90deg);
+      }
+    }
+
+    /* Case Study Cards */
+    .case-study-card {
+      background: hsl(var(--card));
+      border: 1px solid hsl(var(--border));
+      border-radius: 12px;
+      padding: var(--space-2xl);
+    }
+
+    .case-study-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: var(--space-xl);
+      flex-wrap: wrap;
+      gap: var(--space-lg);
+    }
+
+    .case-study-card h3 {
+      margin: 0;
+    }
+
+    .case-study-section {
+      margin-bottom: var(--space-lg);
+    }
+
+    .case-study-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .case-study-section h4 {
+      color: hsl(var(--primary));
+      margin-bottom: var(--space-sm);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .case-study-section p {
+      margin: 0;
+      color: hsl(var(--foreground) / 0.85);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .divider-light {
+      height: 1px;
+      background: hsl(var(--border));
+      margin: var(--space-lg) 0;
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-xl);
+      margin-top: var(--space-2xl);
+    }
+
+    @media (max-width: 640px) {
+      .transformation-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-study-card {
+        padding: var(--space-lg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="cosmo-mark"><div class="sun"></div><div class="peaks"></div></div>
+        Ai Architechs
+      </a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cosmo.html">Cosmo</a></li>
+        <li><a href="results.html" class="active">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </li>
+      </ul>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav-mobile">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="cosmo.html">Cosmo</a>
+      <a href="results.html">Results</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height: auto; padding-bottom: var(--space-2xl);">
+      <div class="container">
+        <div class="fade-in" style="max-width: 700px;">
+          <span class="label">Results</span>
+          <h1 style="margin-top: var(--space-md);">Proof over promises.</h1>
+          <p>We believe credibility comes from evidence, not claims. Here's what happens when teams get the right support, the right methodology, and the right tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Metrics Bar -->
+    <section class="section-sm" style="padding-top: 0;">
+      <div class="container">
+        <div class="metrics-strip fade-in">
+          <div class="metric">
+            <div class="metric-value" data-count="200" data-suffix="%">200%</div>
+            <div class="metric-label">Increase in daily AI usage across pilot groups</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value" data-count="100" data-suffix="+" data-prefix="">100+</div>
+            <div class="metric-label">Custom GPTs built by internal teams</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value" data-count="45" data-suffix="%">45%</div>
+            <div class="metric-label">Average time reduction on repetitive tasks</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformation Narrative -->
+    <section class="section" style="background: hsl(var(--muted));">
+      <div class="container">
+        <div class="fade-in" style="text-align: center; margin-bottom: var(--space-2xl);">
+          <h2>From trying AI to trusting it.</h2>
+          <p style="margin-top: var(--space-lg); max-width: 600px; margin-left: auto; margin-right: auto;">Real transformation happens when curiosity becomes confidence. Here's the journey we see across every organization.</p>
+        </div>
+        <div class="transformation-grid fade-in">
+          <div class="transformation-pair">
+            <div class="from">Curiosity</div>
+            <div class="arrow">→</div>
+            <div class="to">Capability</div>
+          </div>
+          <div class="transformation-pair">
+            <div class="from">Uncertainty</div>
+            <div class="arrow">→</div>
+            <div class="to">Confidence</div>
+          </div>
+          <div class="transformation-pair">
+            <div class="from">Pilots</div>
+            <div class="arrow">→</div>
+            <div class="to">Progress</div>
+          </div>
+          <div class="transformation-pair">
+            <div class="from">Fear</div>
+            <div class="arrow">→</div>
+            <div class="to">Fluency</div>
+          </div>
+          <div class="transformation-pair">
+            <div class="from">Intent</div>
+            <div class="arrow">→</div>
+            <div class="to">Impact</div>
+          </div>
+          <div class="transformation-pair">
+            <div class="from">Hype</div>
+            <div class="arrow">→</div>
+            <div class="to">Habit</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section">
+      <div class="container">
+        <div class="fade-in" style="text-align: center; margin-bottom: var(--space-3xl);">
+          <span class="label">Anonymized Case Studies</span>
+          <h2 style="margin-top: var(--space-md);">Real transformations from real teams.</h2>
+          <p style="margin-top: var(--space-lg); max-width: 600px; margin-left: auto; margin-right: auto;">Client names are confidential while our results speak for themselves. Here's how different organizations moved from experimentation to embedded AI fluency.</p>
+        </div>
+
+        <div class="fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: var(--space-xl);">
+          <!-- Case Study 1 -->
+          <div class="case-study-card">
+            <div class="case-study-header">
+              <div>
+                <h3 style="font-size: 1.125rem;">Mid-Size Creative Agency</h3>
+                <span class="pill pill-muted" style="margin-top: var(--space-sm); display: inline-flex;">Advertising & Media</span>
+              </div>
+            </div>
+
+            <div class="case-study-section">
+              <h4>Challenge</h4>
+              <p>Fragmented AI experimentation across 12 teams with no consistency, shared practices, or organizational alignment. Each team was building in isolation — repeating mistakes and missing opportunities to learn from each other.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Approach</h4>
+              <p>We started with a comprehensive workflow audit to identify shared pain points and high-impact opportunities. Then we deployed a 4-phase engagement: foundation training across all teams, role-specific workshops, hands-on deployment with live coaching, and Cosmo platform adoption to create a shared prompt library.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Outcome</h4>
+              <div style="display: flex; flex-direction: column; gap: var(--space-sm); margin-top: var(--space-md);">
+                <div>
+                  <span class="pill pill-success" style="display: inline-flex;">200% increase</span>
+                  <p style="margin-top: var(--space-xs);">in daily AI usage across the organization</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Organization-wide fluency</span>
+                  <p style="margin-top: var(--space-xs);">Teams speak the same language about AI and workflows</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Shared asset library</span>
+                  <p style="margin-top: var(--space-xs);">50+ production prompts built and maintained collaboratively</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="case-study-card">
+            <div class="case-study-header">
+              <div>
+                <h3 style="font-size: 1.125rem;">Enterprise Marketing Organization</h3>
+                <span class="pill pill-muted" style="margin-top: var(--space-sm); display: inline-flex;">Technology</span>
+              </div>
+            </div>
+
+            <div class="case-study-section">
+              <h4>Challenge</h4>
+              <p>Leadership wanted ROI proof and stakeholder confidence, but the marketing and operations teams lacked the training infrastructure, standards, and frameworks to use AI effectively. Tools existed but adoption was spotty and results unmeasurable.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Approach</h4>
+              <p>We conducted a detailed assessment to surface the highest-impact workflow opportunities with measurable benchmarks. Then we deployed targeted training paired with metrics dashboards, champion programs, and Cosmo to track adoption, quality, and time savings in real time. Every adoption milestone fed stakeholder confidence.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Outcome</h4>
+              <div style="display: flex; flex-direction: column; gap: var(--space-sm); margin-top: var(--space-md);">
+                <div>
+                  <span class="pill pill-success" style="display: inline-flex;">100+ custom GPTs</span>
+                  <p style="margin-top: var(--space-xs);">built and deployed by internal teams</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Stakeholder-ready dashboards</span>
+                  <p style="margin-top: var(--space-xs);">Real-time ROI metrics showing adoption, hours saved, quality gains</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Leadership confidence</span>
+                  <p style="margin-top: var(--space-xs);">Board-ready case studies proving productivity gains across functions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="case-study-card">
+            <div class="case-study-header">
+              <div>
+                <h3 style="font-size: 1.125rem;">Independent Agency Network</h3>
+                <span class="pill pill-muted" style="margin-top: var(--space-sm); display: inline-flex;">Professional Services</span>
+              </div>
+            </div>
+
+            <div class="case-study-section">
+              <h4>Challenge</h4>
+              <p>AI anxiety was widespread among experienced staff who feared replacement or obsolescence. Resistance was high even though the organization had already invested in tooling. Without addressing the human side, no adoption would stick.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Approach</h4>
+              <p>We led with empathy. We ran human-first workshops focused on empowerment, not replacement — showing how AI could elevate their work, not end it. We prioritized quick wins, built a champion program of respected internal advocates, and created a safe space for experimentation and learning.</p>
+            </div>
+
+            <div class="divider-light"></div>
+
+            <div class="case-study-section">
+              <h4>Outcome</h4>
+              <div style="display: flex; flex-direction: column; gap: var(--space-sm); margin-top: var(--space-md);">
+                <div>
+                  <span class="pill pill-success" style="display: inline-flex;">45% time reduction</span>
+                  <p style="margin-top: var(--space-xs);">on repetitive, low-value tasks across the network</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Team-led initiatives</span>
+                  <p style="margin-top: var(--space-xs);">Staff are now driving their own AI adoption and workflow improvements</p>
+                </div>
+                <div>
+                  <span class="pill pill-primary" style="display: inline-flex;">Waiting list for training</span>
+                  <p style="margin-top: var(--space-xs);">Demand for advanced workshops now exceeds capacity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: hsl(var(--muted));">
+      <div class="container">
+        <div class="fade-in" style="text-align: center; margin-bottom: var(--space-2xl);">
+          <h2>What teams are saying.</h2>
+        </div>
+
+        <div class="testimonials-grid fade-in">
+          <div class="quote">
+            <p>"Working with Ai Architechs made AI feel less like a black box and more like a light switch — we finally knew how to turn it on."</p>
+            <cite>— Kern Egan, Multiplier</cite>
+          </div>
+
+          <div class="quote">
+            <p>"They made AI feel like something we could do — not something being done to us."</p>
+            <cite>— Prospect Interview</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section text-center">
+      <div class="container fade-in">
+        <h2>Ready to write your own results story?</h2>
+        <p style="margin: var(--space-lg) auto; font-size: 1.125rem; max-width: 50ch;">Every team's transformation looks different. Let's talk about your challenges, your goals, and where AI can move the needle for you.</p>
+        <a href="contact.html" class="btn btn-primary">Let's talk about your team. <span class="arrow">&rarr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom: var(--space-md); display: inline-flex;">
+            <div class="cosmo-mark"><div class="sun"></div><div class="peaks"></div></div>
+            Ai Architechs
+          </a>
+          <p>Human-first AI adoption and coaching. We put people in control of AI — and their own potential.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Platform</div>
+          <ul class="footer-links">
+            <li><a href="cosmo.html">Cosmo</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Connect</div>
+          <ul class="footer-links">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@aiarchitechs.co">hello@aiarchitechs.co</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ai Architechs. All rights reserved.</span>
+        <span>aiarchitechs.co</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
