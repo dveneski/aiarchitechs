@@ -859,3 +859,43 @@ main {
   .loop-visual { flex-direction: column; }
   .loop-arrow { transform: rotate(90deg); }
 }
+
+/* --- Cosmo Image Cards --- */
+.cosmo-img-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 2px 12px hsl(var(--foreground) / 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cosmo-img-card:hover {
+  box-shadow: 0 8px 30px hsl(var(--foreground) / 0.1);
+  transform: translateY(-2px);
+}
+
+.cosmo-img-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cosmo-img-label {
+  padding: var(--space-sm) var(--space-md);
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  background: hsl(var(--muted));
+  border-top: 1px solid hsl(var(--border));
+}
+
+@media (max-width: 768px) {
+  .cosmo-img-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
