@@ -861,6 +861,11 @@ main {
 }
 
 /* --- Cosmo Image Cards --- */
+.cosmo-img-grid {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .cosmo-img-card {
   position: relative;
   border-radius: var(--radius-xl);
@@ -869,6 +874,7 @@ main {
   border: 1px solid hsl(var(--border));
   box-shadow: 0 2px 12px hsl(var(--foreground) / 0.06);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  min-width: 0;
 }
 
 .cosmo-img-card:hover {
@@ -880,6 +886,7 @@ main {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 100%;
   object-fit: cover;
 }
 
