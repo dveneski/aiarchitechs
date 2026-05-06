@@ -135,84 +135,28 @@
           <h2 style="margin-top: var(--space-md);">Built for how teams actually work</h2>
         </div>
 
-        <!-- Two Stylized UI Previews -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); margin-bottom: var(--space-3xl);">
-          <!-- Preview 1: Three-panel layout -->
-          <div class="cosmo-screenshot fade-in">
-            <div style="width: 95%; height: 90%; display: grid; grid-template-columns: 120px 1fr 140px; gap: 10px; padding: 16px; border-radius: 12px;">
-              <!-- Left sidebar -->
-              <div style="background: hsl(var(--muted)); border-radius: 8px; padding: 10px; display: flex; flex-direction: column;">
-                <div style="width: 32px; height: 32px; border-radius: 50%; background: hsl(var(--primary)); margin: 0 auto 12px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 80%; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--primary) / 0.3); border-radius: 2px; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 60%; margin-bottom: 12px;"></div>
-                <div style="flex: 1;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 4px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 70%;"></div>
-              </div>
-              <!-- Center: Chat/Prompt stream -->
-              <div style="background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 8px; padding: 14px; display: flex; flex-direction: column;">
-                <div style="height: 28px; background: hsl(var(--muted)); border-radius: 14px; margin-bottom: 14px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 90%; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 70%; margin-bottom: 16px;"></div>
-                <div style="height: 48px; background: hsl(var(--primary) / 0.08); border: 2px solid hsl(var(--primary) / 0.2); border-radius: 8px; margin-bottom: 12px; padding: 8px;"></div>
-                <div style="flex: 1;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 6px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 40%;"></div>
-              </div>
-              <!-- Right: Output preview -->
-              <div style="background: linear-gradient(135deg, hsl(var(--primary) / 0.04), hsl(var(--card))); border: 1px solid hsl(var(--primary) / 0.15); border-radius: 8px; padding: 10px; display: flex; flex-direction: column;">
-                <div style="height: 4px; background: hsl(var(--primary) / 0.5); border-radius: 2px; margin-bottom: 8px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 70%; margin-bottom: 12px;"></div>
-                <div style="height: 28px; background: hsl(var(--success) / 0.1); border: 1px solid hsl(var(--success) / 0.3); border-radius: 6px; margin-bottom: 8px;"></div>
-                <div style="height: 28px; background: hsl(var(--muted)); border-radius: 6px; margin-bottom: 8px;"></div>
-                <div style="height: 28px; background: hsl(var(--primary) / 0.08); border: 1px dashed hsl(var(--primary) / 0.3); border-radius: 6px; margin-bottom: 8px;"></div>
-                <div style="flex: 1;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 4px;"></div>
-                <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 50%;"></div>
-              </div>
-            </div>
+        <!-- Cosmo Screenshots 2x2 Grid -->
+        <div class="fade-in cosmo-img-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); margin-bottom: var(--space-3xl);">
+          <div class="cosmo-img-card">
+            <img src="images/cosmo-home.jpg" alt="Cosmo home screen with prompt input and quick-start actions" loading="lazy">
+            <div class="cosmo-img-label">Home</div>
           </div>
-
-          <!-- Preview 2: Alternative view -->
-          <div class="cosmo-screenshot fade-in">
-            <div style="width: 95%; height: 90%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px; border-radius: 12px;">
-              <!-- Left: Prompt library -->
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="background: hsl(var(--muted)); border-radius: 8px; padding: 12px; height: 40px; display: flex; align-items: center;">
-                  <div style="width: 100%; height: 4px; background: hsl(var(--border)); border-radius: 2px;"></div>
-                </div>
-                <div style="background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 8px; padding: 12px; flex: 1;">
-                  <div style="height: 4px; background: hsl(var(--primary) / 0.3); border-radius: 2px; margin-bottom: 6px;"></div>
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 60%; margin-bottom: 10px;"></div>
-                  <div style="height: 3px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 16px;"></div>
-                  <div style="height: 4px; background: hsl(var(--primary) / 0.3); border-radius: 2px; margin-bottom: 6px;"></div>
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 50%;"></div>
-                </div>
-                <div style="background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 8px; padding: 12px;">
-                  <div style="height: 4px; background: hsl(var(--success) / 0.3); border-radius: 2px; margin-bottom: 6px;"></div>
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 70%;"></div>
-                </div>
-              </div>
-              <!-- Right: Editing & preview -->
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="background: hsl(var(--muted)); border-radius: 8px; padding: 12px; height: 40px;"></div>
-                <div style="background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 8px; padding: 12px; flex: 1; display: flex; flex-direction: column;">
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; margin-bottom: 8px;"></div>
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 85%; margin-bottom: 8px;"></div>
-                  <div style="height: 4px; background: hsl(var(--border)); border-radius: 2px; width: 60%; margin-bottom: 14px;"></div>
-                  <div style="flex: 1; background: hsl(var(--primary) / 0.05); border: 1px dashed hsl(var(--primary) / 0.2); border-radius: 6px;"></div>
-                </div>
-                <div style="background: linear-gradient(135deg, hsl(var(--success) / 0.08), hsl(var(--muted))); border: 1px solid hsl(var(--success) / 0.2); border-radius: 8px; padding: 12px; height: 50px;"></div>
-              </div>
-            </div>
+          <div class="cosmo-img-card">
+            <img src="images/cosmo-prompt-builder.jpg" alt="Cosmo prompt builder with scoring and coaching feedback" loading="lazy">
+            <div class="cosmo-img-label">Prompt Builder</div>
+          </div>
+          <div class="cosmo-img-card">
+            <img src="images/cosmo-workflow.jpg" alt="Cosmo workflow builder with step-by-step AI-assisted tasks" loading="lazy">
+            <div class="cosmo-img-label">Workflows</div>
+          </div>
+          <div class="cosmo-img-card">
+            <img src="images/cosmo-dashboard.jpg" alt="Cosmo team dashboard with leaderboards and adoption metrics" loading="lazy">
+            <div class="cosmo-img-label">Dashboard</div>
           </div>
         </div>
 
         <div class="fade-in text-center">
-          <p style="max-width: 700px; margin: 0 auto; font-size: 1.0625rem; line-height: 1.6;">Cosmo's three-panel layout puts the coaching conversation, your workflows, and live output previews side by side — so nothing gets lost between thinking and doing.</p>
+          <p style="max-width: 700px; margin: 0 auto; font-size: 1.0625rem; line-height: 1.6;">From prompt coaching and workflow building to team analytics and shared libraries — Cosmo gives your organization the infrastructure to turn AI experimentation into daily habit.</p>
         </div>
       </div>
     </section>
@@ -359,28 +303,7 @@
       }
     }
 
-    /* Cosmo Screenshots */
-    .cosmo-screenshot {
-      width: 100%;
-      aspect-ratio: 1.2 / 1;
-      background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
-      border: 1px solid hsl(var(--border));
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 8px 32px hsl(0 0% 0% / 0.08);
-    }
-
-    .cosmo-screenshot::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 800px 600px at center, transparent 0%, hsl(0 0% 0% / 0.03) 100%);
-      pointer-events: none;
-    }
+    /* Cosmo Screenshots — now handled by .cosmo-img-card in styles.css */
 
     /* Metrics Strip */
     .metrics-strip {
@@ -432,10 +355,7 @@
         gap: var(--space-lg);
       }
 
-      .cosmo-screenshot {
-        aspect-ratio: auto;
-        height: 300px;
-      }
+      /* cosmo-img-card responsive handled in styles.css */
     }
   </style>
 </body>
