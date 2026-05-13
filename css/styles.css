@@ -343,6 +343,16 @@ a:hover { opacity: 0.8; }
   font-size: 1.125rem;
 }
 
+/* Logo images for light/dark mode swap */
+.logo-img {
+  height: 36px;
+  width: auto;
+}
+.logo-dark { display: none; }
+.logo-light { display: block; }
+.dark .logo-dark { display: block; }
+.dark .logo-light { display: none; }
+
 /* Cosmo mark (inline SVG version for nav) */
 .cosmo-mark {
   width: 36px;
