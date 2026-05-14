@@ -3,6 +3,9 @@
    Design System: Fraunces + Geist + Brand Gold
    ============================================ */
 
+/* Temporarily hide all Cosmo links */
+a[href="cosmo.html"] { display: none; }
+
 /* --- CSS Custom Properties (Light Mode Default) --- */
 :root {
   /* Colors */
