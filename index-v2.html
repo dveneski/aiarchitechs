@@ -222,23 +222,31 @@
         </div>
         <div class="cosmo-slideshow-wrap fade-in" style="margin-top: var(--space-2xl);">
           <div class="cosmo-slideshow" id="cosmoSlideshow">
-            <img src="images/cosmo-slide-01-home.jpg" alt="Cosmo Home - discover prompts and ideas" class="cosmo-slide active">
+            <div class="cosmo-slide cosmo-interstitial active"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Welcome to Cosmo<br>A prompt coaching platform<br>for real teams</div><div class="cosmo-interstitial-rule"></div></div></div>
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Cosmo helps teams write better prompts,<br>remix what works, build prompt libraries,<br>and track adoption</div><div class="cosmo-interstitial-rule"></div></div></div>
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Cosmo helps you turn<br>scattered experimentation<br>into organizational capability</div><div class="cosmo-interstitial-rule"></div></div></div>
+            <img src="images/cosmo-slide-01-home.jpg" alt="Cosmo Home" class="cosmo-slide">
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Let's build a prompt</div><div class="cosmo-interstitial-rule"></div></div></div>
             <img src="images/cosmo-slide-02-build-prompt.jpg" alt="Build a Prompt - guided flow" class="cosmo-slide">
             <img src="images/cosmo-slide-03-build-prompt-2.jpg" alt="Build a Prompt - context and goal" class="cosmo-slide">
             <img src="images/cosmo-slide-04-build-prompt-3.jpg" alt="Build a Prompt - task and sources" class="cosmo-slide">
             <img src="images/cosmo-slide-05-build-prompt-4.jpg" alt="Build a Prompt - output format" class="cosmo-slide">
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Let's build a workflow</div><div class="cosmo-interstitial-rule"></div></div></div>
             <img src="images/cosmo-slide-06-workflow-1.jpg" alt="Workflows - build automated processes" class="cosmo-slide">
             <img src="images/cosmo-slide-07-workflow-2.jpg" alt="Workflows - lead enrichment pipeline" class="cosmo-slide">
             <img src="images/cosmo-slide-08-workflow-3.jpg" alt="Workflows - lead scoring" class="cosmo-slide">
             <img src="images/cosmo-slide-09-workflow-4.jpg" alt="Workflows - CRM record creation" class="cosmo-slide">
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Save your prompts to a library<br>to remix and reuse</div><div class="cosmo-interstitial-rule"></div></div></div>
             <img src="images/cosmo-slide-10-prompts-1.jpg" alt="My Prompts - personal library" class="cosmo-slide">
             <img src="images/cosmo-slide-11-prompts-2.jpg" alt="Prompt details - score breakdown" class="cosmo-slide">
             <img src="images/cosmo-slide-12-prompts-3.jpg" alt="Prompt scoring - rubric breakdown" class="cosmo-slide">
             <img src="images/cosmo-slide-13-prompts-4.jpg" alt="Prompt details - improved prompt" class="cosmo-slide">
             <img src="images/cosmo-slide-14-prompts-5.jpg" alt="Discover Prompts - trending" class="cosmo-slide">
+            <div class="cosmo-slide cosmo-interstitial"><div class="cosmo-interstitial-inner"><div class="cosmo-interstitial-text">Review organization Ai acumen growth<br>through an executive dashboard</div><div class="cosmo-interstitial-rule"></div></div></div>
             <img src="images/cosmo-slide-15-dashboard-1.jpg" alt="Executive Dashboard - momentum" class="cosmo-slide">
             <img src="images/cosmo-slide-16-dashboard-2.jpg" alt="Executive Dashboard - trends" class="cosmo-slide">
             <img src="images/cosmo-slide-17-dashboard-3.jpg" alt="Executive Dashboard - individuals" class="cosmo-slide">
+            <div class="cosmo-vignette"></div>
           </div>
         </div>
       </div>
@@ -316,7 +324,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 850 / 643;
-      background: #0d0d0d;
+      background: #161616;
     }
 
     .cosmo-slide {
@@ -350,6 +358,59 @@
     @keyframes cosmoFadeOut {
       0%   { opacity: 1; transform: scale(1);     filter: brightness(1); }
       100% { opacity: 0; transform: scale(0.982); filter: brightness(0.7); }
+    }
+
+    /* Interstitial text slides */
+    .cosmo-interstitial {
+      background: #161616;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 100px;
+      text-align: center;
+    }
+
+    .cosmo-interstitial-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .cosmo-interstitial-text {
+      font-family: 'Fraunces', serif;
+      font-size: 26px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.55;
+      color: #e8e0d4;
+      letter-spacing: 0.01em;
+    }
+
+    .cosmo-interstitial-rule {
+      width: 40px;
+      height: 1px;
+      background: hsl(var(--primary));
+      margin-top: 36px;
+      opacity: 0.6;
+    }
+
+    /* Vignette overlay */
+    .cosmo-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 70%, rgba(0,0,0,0.35) 100%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+      .cosmo-interstitial {
+        padding: 40px 32px;
+      }
+      .cosmo-interstitial-text {
+        font-size: 20px;
+      }
     }
   </style>
 
